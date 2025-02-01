@@ -136,7 +136,8 @@ A scatter plot was used to visualize the relationship between **temperature and 
 ## <a name="_2nx725dvg3g"></a>**Forecasting Model:**
 1. ### <a name="_84s7liwzzbjm"></a>Model used and why?
 In our case, the ARIMA (AutoRegressive Integrated Moving Average) model was used to predict future temperatures. It is a widely used statistical approach for **time-series forecasting**, particularly for **predicting numerical values over time**.
-1. ## <a name="_w66obk2o9ik1"></a>Model Implementation:
+
+2. ## <a name="_w66obk2o9ik1"></a>Model Implementation:
 - To train the ARIMA model, the dataset was split into:
 - **Training Data:** All the data before **January 23, 2025** were used to train the model on historical temperature patterns.
 - **Test Data:** Data from **January 23 - January 29, 2025** were used to evaluate how well the model performs on unseen future data.
@@ -146,18 +147,20 @@ In our case, the ARIMA (AutoRegressive Integrated Moving Average) model was used
 - **q (Moving Average Component) = 2** → The model incorporates information from **the last 2 forecast errors** to adjust predictions.
 
 These parameters were chosen based on **analysis of the autocorrelation function (ACF) and partial autocorrelation function (PACF) plots**.
-1. ### <a name="_qulbj48sm2as"></a>Output prediction:
+
+3. ### <a name="_qulbj48sm2as"></a>Output prediction:
 The **ARIMA model was used to generate temperature forecasts** for the test period **(January 23 - January 29, 2025)**.
 
 These predictions were later evaluated against **actual recorded temperatures** using **Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE)** to assess the model’s accuracy. 
 
 -----
-1. ## <a name="_xn36lhwsms55"></a>**Model Evaluation:**
+## <a name="_xn36lhwsms55"></a>**Model Evaluation:**
 Comparison of **actual vs predicted** temperatures were done for **January 23** till **January 29.** These values were then used to calculate the error metrics.
 1. ### <a name="_zhmnxzmswx79"></a>Performance Metrics used:
 - **Mean Absolute Error (MAE)**
 - **Root Mean Squared Error (RMSE)**
-1. ### <a name="_dzmop2ufuidd"></a>Model Evaluation:
+
+2. ### <a name="_dzmop2ufuidd"></a>Model Evaluation:
 The error metrics were calculated:
 
 |**MAE (Lower is better)**|**RMSE (Lower is better)**|
@@ -165,10 +168,10 @@ The error metrics were calculated:
 |0\.9678221548340323|1\.002382024281664|
 
 **ARIMA Model provided a reasonable short-term forecast.** The error metrics are quite decent and it can be said that the model worked well.
-1. ## <a name="_mmrwag65y9eo"></a>**Insights and Observations:**
+## <a name="_mmrwag65y9eo"></a>**Insights and Observations:**
 1. ### <a name="_pqrqc78y77q3"></a>Key Observations:
-- **ARIMA** was effective for **short-term temperature predictions.**
-- **No strong relationship** was found between **temperature** & **precipitation.** A **scatter plot** analysis of **temperature** vs. **precipitation** revealed that higher temperatures do not necessarily lead to increased precipitation.
-- **Seasonality** was detected, meaning advanced seasonal models could improve forecasting accuracy. The **temperature trend analysis and ACF/PACF plots** showed a **repeating pattern over specific intervals**, indicating the presence of **seasonality** in the data.
+  - **ARIMA** was effective for **short-term temperature predictions.**
+  - **No strong relationship** was found between **temperature** & **precipitation.** A **scatter plot** analysis of **temperature** vs. **precipitation** revealed that higher temperatures do not necessarily lead to increased precipitation.
+  - **Seasonality** was detected, meaning advanced seasonal models could improve forecasting accuracy. The **temperature trend analysis and ACF/PACF plots** showed a **repeating pattern over specific intervals**, indicating the presence of **seasonality** in the data.
 
 
