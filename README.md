@@ -60,8 +60,8 @@ To ensure **data reliability**, outliers were identified using the **Interquarti
 
 🔹 **How Winsorization Works:**
 
--         If a value is **below the 1st percentile**, it is **replaced** with the **1st percentile value**.
--         If a value is **above the 99th percentile**, it is **replaced** with the **99th percentile value**.                          
+- If a value is **below the 1st percentile**, it is **replaced** with the **1st percentile value**.
+- If a value is **above the 99th percentile**, it is **replaced** with the **99th percentile value**.                          
 
 3.2. Clipping(Capping)
 
@@ -74,20 +74,18 @@ To ensure **data reliability**, outliers were identified using the **Interquarti
 - If a value is **less than a lower threshold**, it is **replaced with the lower threshold**.
 - If a value is **greater than an upper threshold**, it is **replaced with the upper threshold**.            
 
-1. ### <a name="_bwknredsp1jm"></a>Skewness Analysis:
+4. ### <a name="_bwknredsp1jm"></a>Skewness Analysis:
 - The **skewness of all columns** was calculated to determine **the distribution of data in each feature**.
 - **Observation:** Most columns exhibited **high skewness**, meaning they were **not normally distributed**.
 - **Impact on Outlier Handling:** Since the data was skewed, traditional outlier removal techniques (like Z-score-based removal) **could have caused excessive data loss**.
 - Since, it was observed that most of the columns were highly skewed and so, winsorization method was applied to handle the extreme outliers. This was because the clipping method worked best with data which is normally distributed whereas winsorization worked best with skewed data.
-1. ### <a name="_7tjghx7up6mw"></a>Data Normalization (Scaling):
+5. ### <a name="_7tjghx7up6mw"></a>Data Normalization (Scaling):
 After handling outliers, the dataset was **scaled** using **Min-Max Scaling**:
 
 - Since different variables had **different ranges** (e.g., temperature in Celsius, air quality in arbitrary index values), **Min-Max Scaling** was applied: 
 
-  `                           `Xscaled =X-XminXmax-Xmin​​
-
 -----
-1. ## <a name="_y10i8djdloed"></a>**Exploratory Data Analysis (EDA):**
+## <a name="_y10i8djdloed"></a>**Exploratory Data Analysis (EDA):**
 1. ### <a name="_38i6cy7x0ibq"></a>Plotting Graphs of all Features to obtain trends:
 - **Temperature:** Normally distributed with some skewness in extreme values.
 - **Wind Speed & Gusts:** Right-skewed, meaning most locations have low wind speeds, but extreme wind speeds exist.
@@ -96,7 +94,8 @@ After handling outliers, the dataset was **scaled** using **Min-Max Scaling**:
 - **PM2.5, PM10, CO, NO2, SO2:** Skewed right, with a majority of locations having low pollution, but some highly polluted regions.
 - **EPA and DEFRA Indexes:** Mostly concentrated in lower values (indicating acceptable air quality), but some spikes in unhealthy levels.
 - **Moon Illumination:** Nearly uniform, as expected from cyclic moon phases.
-1. ### <a name="_ttno7ckyxtz8"></a>Correlation Matrix:
+  
+2. ### <a name="_ttno7ckyxtz8"></a>Correlation Matrix:
 - **Highly Correlated:**
 - **Wind Speed & Gusts** (~0.95) → Strong winds lead to strong gusts.
 - **Humidity & Cloud Cover** (~0.56) → High humidity generally leads to cloud formation.
@@ -109,19 +108,20 @@ After handling outliers, the dataset was **scaled** using **Min-Max Scaling**:
 - **Visibility & Air Pollution (PM2.5, PM10, CO, etc.)** (~-0.1-0) → It would be expected that pollutants would lead to decrease in visibility however statistically, visibility doesn’t depend much on pollution.
 - **Moon Phases & Weather**(~0)**:** As expected, moon phases do not influence weather.
 - **Wind Direction & All other factors**(~0)**:** No significant relationship.
-1. ### <a name="_agbha2wv2nxd"></a>Temperature Trends over time:
+  
+3. ### <a name="_agbha2wv2nxd"></a>Temperature Trends over time:
 - The plot reveals a **seasonal pattern**, where temperature values **rise and fall periodically**, indicating **recurring trends**. 
 - The temperature was high in **June-September** likely due to the summer **season** in most of the parts of Earth whereas the temperatures were low between **September and February** likely due to the winter **season**.
 - The data suggests the presence of **long-term trends**, which may indicate gradual climate shifts or yearly variations.
 - Short-term **fluctuations** were also observed, likely due to **daily weather changes, atmospheric conditions, or local environmental factors**.
 
-1. ### <a name="_wpognvn4uwjz"></a>Precipitation Trends over time:
+4. ### <a name="_wpognvn4uwjz"></a>Precipitation Trends over time:
 - Unlike temperature, **precipitation does not follow a smooth trend** and instead appears **sporadic**, with frequent **zero or very low values** and occasional spikes indicating heavy rainfall events. This aligns with the **skewed precipitation distribution observed in the histogram**, where most values were close to zero.
 - The precipitation trend shows **sudden, sharp increases** on specific days, likely due to **localized storms, seasonal monsoons, or atmospheric disturbances**.
 - Precipitation **does not exhibit a clear long-term trend**. Since **precipitation does not follow a smooth trend**, traditional forecasting models like **ARIMA may struggle** with accuracy.
 
 
-1. ### <a name="_98sjjvslok84"></a>Data Visualizations:
+5. ### <a name="_98sjjvslok84"></a>Data Visualizations:
 - Distribution of Temperature:
 
 The dataset is left-skewed but not much. This indicates that the dataset doesn’t exhibit very extreme variations in data.
@@ -135,7 +135,7 @@ The precipitation data was **highly skewed**, meaning most recorded values were 
 A scatter plot was used to visualize the relationship between **temperature and precipitation**. The plot **showed no strong correlation**, meaning that **higher temperatures do not necessarily lead to increased precipitation** or vice versa. This means that there are several other factors that affect precipitation in an area.
 
 -----
-1. ## <a name="_2nx725dvg3g"></a>**Forecasting Model:**
+## <a name="_2nx725dvg3g"></a>**Forecasting Model:**
 1. ### <a name="_84s7liwzzbjm"></a>Model used and why?
 In our case, the ARIMA (AutoRegressive Integrated Moving Average) model was used to predict future temperatures. It is a widely used statistical approach for **time-series forecasting**, particularly for **predicting numerical values over time**.
 1. ## <a name="_w66obk2o9ik1"></a>Model Implementation:
