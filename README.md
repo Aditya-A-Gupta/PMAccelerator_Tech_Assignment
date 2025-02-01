@@ -9,13 +9,13 @@ Climate change and weather variability have made **temperature forecasting** a c
 - **Forecasting Model Implementation** – Using **ARIMA (AutoRegressive Integrated Moving Average)**.
 - **Model Evaluation** – Assessing performance using **Mean Absolute Error (MAE) & Root Mean Squared Error (RMSE)**.
 - **Insights & Conclusions**– Interpreting findings.
-1. ### <a name="_u5a53x7w54ah"></a>Objective of the Study
+2. ### <a name="_u5a53x7w54ah"></a>Objective of the Study
 The primary objective is to **predict temperature trends** using time-series forecasting techniques and analyze the impact of various weather parameters.
-1. ### <a name="_ymhf13gxjduc"></a>Dataset Description
+3. ### <a name="_ymhf13gxjduc"></a>Dataset Description
 - **Total Records:** 50,085
 - **Total Features:** 41
 - **Time Period:** Continuous weather data
-1. ### <a name="_1rlivbcmd193"></a>Key Variables in Dataset
+4. ### <a name="_1rlivbcmd193"></a>Key Variables in Dataset
 - **Temperature (Celsius & Fahrenheit)** – Target variable for forecasting.
 - **Precipitation (mm & inches)** – Measures rainfall at different locations.
 - **Wind Speed (mph & kph)** – Affects temperature variations.
