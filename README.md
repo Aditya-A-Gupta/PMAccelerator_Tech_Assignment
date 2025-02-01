@@ -95,17 +95,17 @@ After handling outliers, the dataset was **scaled** using **Min-Max Scaling**:
   
 2. ### <a name="_ttno7ckyxtz8"></a>Correlation Matrix:
 - **Highly Correlated:**
-- **Wind Speed & Gusts** (~0.95) → Strong winds lead to strong gusts.
-- **Humidity & Cloud Cover** (~0.56) → High humidity generally leads to cloud formation.
-- **Air Pollution Components(CO, NO2, PM2.5, PM10) and Air Quality Indices**(~0.5-0.76)**:** Presence of Air pollutants lead to increase in air quality indices as expected.
+  - **Wind Speed & Gusts** (~0.95) → Strong winds lead to strong gusts.
+  - **Humidity & Cloud Cover** (~0.56) → High humidity generally leads to cloud formation.
+  - **Air Pollution Components(CO, NO2, PM2.5, PM10) and Air Quality Indices**(~0.5-0.76)**:** Presence of Air pollutants lead to increase in air quality indices as expected.
 - **Inverse Correlations:**
-- **Temperature & Humidity** (~-0.26) → Higher temperatures tend to reduce humidity.
-- **Cloud Cover & Visibility** (~-0.1) → More cloud cover often reduces clear visibility.
+  - **Temperature & Humidity** (~-0.26) → Higher temperatures tend to reduce humidity.
+  - **Cloud Cover & Visibility** (~-0.1) → More cloud cover often reduces clear visibility.
 - **Weak/No Correlation:**
-- **Air Pollution Components (PM2.5, PM10, CO, NO2, SO2)** (~0.2-0.7) → It would be expected that pollutants of one kind would lead to an increase in another but that isn’t the case statistically. 
-- **Visibility & Air Pollution (PM2.5, PM10, CO, etc.)** (~-0.1-0) → It would be expected that pollutants would lead to decrease in visibility however statistically, visibility doesn’t depend much on pollution.
-- **Moon Phases & Weather**(~0)**:** As expected, moon phases do not influence weather.
-- **Wind Direction & All other factors**(~0)**:** No significant relationship.
+  - **Air Pollution Components (PM2.5, PM10, CO, NO2, SO2)** (~0.2-0.7) → It would be expected that pollutants of one kind would lead to an increase in another but that isn’t the case statistically. 
+  - **Visibility & Air Pollution (PM2.5, PM10, CO, etc.)** (~-0.1-0) → It would be expected that pollutants would lead to decrease in visibility however statistically, visibility doesn’t depend much on pollution.
+  - **Moon Phases & Weather**(~0)**:** As expected, moon phases do not influence weather.
+  - **Wind Direction & All other factors**(~0)**:** No significant relationship.
   
 3. ### <a name="_agbha2wv2nxd"></a>Temperature Trends over time:
 - The plot reveals a **seasonal pattern**, where temperature values **rise and fall periodically**, indicating **recurring trends**. 
