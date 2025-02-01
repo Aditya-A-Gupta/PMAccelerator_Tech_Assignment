@@ -1,6 +1,6 @@
 # <a name="_1yok37gskr5m"></a> **Weather Forecasting Using Time Series Models**
 -----
-1. ## <a name="_abe2pssfxkek"></a>**Introduction:**
+## <a name="_abe2pssfxkek"></a>**Introduction:**
 1. ### <a name="_vlr1qqc7zgek"></a>Project Overview
 Climate change and weather variability have made **temperature forecasting** a crucial field of study. This project aims to **analyze global weather data** and develop a reliable forecasting model using **time-series techniques**. The study covers:
 
