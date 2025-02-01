@@ -1,6 +1,7 @@
 # <a name="_1yok37gskr5m"></a> **Weather Forecasting Using Time Series Models**
 -----
 ## <a name="_abe2pssfxkek"></a>**Introduction:**
+
 1. ### <a name="_vlr1qqc7zgek"></a>Project Overview
 Climate change and weather variability have made **temperature forecasting** a crucial field of study. This project aims to **analyze global weather data** and develop a reliable forecasting model using **time-series techniques**. The study covers:
 
@@ -9,12 +10,15 @@ Climate change and weather variability have made **temperature forecasting** a c
 - **Forecasting Model Implementation** – Using **ARIMA (AutoRegressive Integrated Moving Average)**.
 - **Model Evaluation** – Assessing performance using **Mean Absolute Error (MAE) & Root Mean Squared Error (RMSE)**.
 - **Insights & Conclusions**– Interpreting findings.
+  
 2. ### <a name="_u5a53x7w54ah"></a>Objective of the Study
 The primary objective is to **predict temperature trends** using time-series forecasting techniques and analyze the impact of various weather parameters.
+
 3. ### <a name="_ymhf13gxjduc"></a>Dataset Description
 - **Total Records:** 50,085
 - **Total Features:** 41
 - **Time Period:** Continuous weather data
+  
 4. ### <a name="_1rlivbcmd193"></a>Key Variables in Dataset
 - **Temperature (Celsius & Fahrenheit)** – Target variable for forecasting.
 - **Precipitation (mm & inches)** – Measures rainfall at different locations.
