@@ -25,7 +25,7 @@ The primary objective is to **predict temperature trends** using time-series for
 ## <a name="_xlpkd41vqavc"></a>**Data Cleaning and Preprocessing:**
 1. ### <a name="_s2rcd3sndoq"></a>Handling Missing Values:
 - The dataset was **analyzed for missing values**, and **no missing data** was detected.
-- Therefore, **no imputation was necessary** for data integrity.
+- Therefore, **no imputation was necessary** for data integrity.![]
 
 
 
