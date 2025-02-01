@@ -94,6 +94,7 @@ After handling outliers, the dataset was **scaled** using **Min-Max Scaling**:
 - **Moon Illumination:** Nearly uniform, as expected from cyclic moon phases.
   
 2. ### <a name="_ttno7ckyxtz8"></a>Correlation Matrix:
+A correlation heatmap was plotted to observe the dependency of one feature on another.
 - **Highly Correlated:**
   - **Wind Speed & Gusts** (~0.95) → Strong winds lead to strong gusts.
   - **Humidity & Cloud Cover** (~0.56) → High humidity generally leads to cloud formation.
@@ -122,15 +123,15 @@ After handling outliers, the dataset was **scaled** using **Min-Max Scaling**:
 5. ### <a name="_98sjjvslok84"></a>Data Visualizations:
 - Distribution of Temperature:
 
-  -The dataset is left-skewed but not much. This indicates that the dataset doesn’t exhibit very extreme variations in data.
+  - The dataset is left-skewed but not much. This indicates that the dataset doesn’t exhibit very extreme variations in data.
 
 - Distribution of Precipitation:
 
-  -The precipitation data was **highly skewed**, meaning most recorded values were **low or near zero**, while a few extreme values represented heavy rainfall events. This suggests that **rainfall is not evenly distributed**, with dry periods being far more common than high-rainfall periods.
+  - The precipitation data was **highly skewed**, meaning most recorded values were **low or near zero**, while a few extreme values represented heavy rainfall events. This suggests that **rainfall is not evenly distributed**, with dry periods being far more common than high-rainfall periods.
 
 - Temperature vs Precipitation:
 
-  -A scatter plot was used to visualize the relationship between **temperature and precipitation**. The plot **showed no strong correlation**, meaning that **higher temperatures do not necessarily lead to increased precipitation** or vice versa. This means that there are several other factors that affect precipitation in an area.
+  - A scatter plot was used to visualize the relationship between **temperature and precipitation**. The plot **showed no strong correlation**, meaning that **higher temperatures do not necessarily lead to increased precipitation** or vice versa. This means that there are several other factors that affect precipitation in an area.
 
 -----
 ## <a name="_2nx725dvg3g"></a>**Forecasting Model:**
