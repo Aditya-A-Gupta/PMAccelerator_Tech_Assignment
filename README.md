@@ -82,8 +82,6 @@ To ensure **data reliability**, outliers were identified using the **Interquarti
 5. ### <a name="_7tjghx7up6mw"></a>Data Normalization (Scaling):
 After handling outliers, the dataset was **scaled** using **Min-Max Scaling**:
 
-- Since different variables had **different ranges** (e.g., temperature in Celsius, air quality in arbitrary index values), **Min-Max Scaling** was applied: 
-
 -----
 ## <a name="_y10i8djdloed"></a>**Exploratory Data Analysis (EDA):**
 1. ### <a name="_38i6cy7x0ibq"></a>Plotting Graphs of all Features to obtain trends:
