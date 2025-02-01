@@ -52,16 +52,16 @@ To ensure **data reliability**, outliers were identified using the **Interquarti
 3. ### <a name="_ftjsxxwvq8ch"></a>Outlier Handling:
    Two methods of Outlier Handling were tried out to determine which worked the best:
 
-3.1. Winsorization
+  3.1. Winsorization
 
-✔  Winsorization is a technique that **limits extreme values by replacing them with the nearest boundary value** at a certain percentile (e.g., **1st and 99th percentiles**).
+    ✔  Winsorization is a technique that **limits extreme values by replacing them with the nearest boundary value** at a certain percentile (e.g., **1st and 99th percentiles**).
 
-✔  This method **retains the total number of observations** while **reducing the impact of extreme values**.
+    ✔  This method **retains the total number of observations** while **reducing the impact of extreme values**.
 
 🔹 **How Winsorization Works:**
 
--   If a value is **below the 1st percentile**, it is **replaced** with the **1st percentile value**.
--   If a value is **above the 99th percentile**, it is **replaced** with the **99th percentile value**.                          
+-         If a value is **below the 1st percentile**, it is **replaced** with the **1st percentile value**.
+-         If a value is **above the 99th percentile**, it is **replaced** with the **99th percentile value**.                          
 
 C.2. Clipping(Capping)
 
