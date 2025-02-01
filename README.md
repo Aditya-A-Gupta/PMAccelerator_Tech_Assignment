@@ -58,10 +58,10 @@ To ensure **data reliability**, outliers were identified using the **Interquarti
 
   ✔  This method **retains the total number of observations** while **reducing the impact of extreme values**.
 
-🔹 **How Winsorization Works:**
+- **How Winsorization Works:**
 
-- If a value is **below the 1st percentile**, it is **replaced** with the **1st percentile value**.
-- If a value is **above the 99th percentile**, it is **replaced** with the **99th percentile value**.                          
+  - If a value is **below the 1st percentile**, it is **replaced** with the **1st percentile value**.
+  - If a value is **above the 99th percentile**, it is **replaced** with the **99th percentile value**.                          
 
 3.2. Clipping(Capping)
 
@@ -69,10 +69,10 @@ To ensure **data reliability**, outliers were identified using the **Interquarti
 
 ✔ Unlike Winsorization, **clipping strictly removes all outliers** beyond the set boundary.
 
-🔹 **How Clipping Works:**
+- **How Clipping Works:**
 
-- If a value is **less than a lower threshold**, it is **replaced with the lower threshold**.
-- If a value is **greater than an upper threshold**, it is **replaced with the upper threshold**.            
+  - If a value is **less than a lower threshold**, it is **replaced with the lower threshold**.
+  - If a value is **greater than an upper threshold**, it is **replaced with the upper threshold**.            
 
 4. ### <a name="_bwknredsp1jm"></a>Skewness Analysis:
 - The **skewness of all columns** was calculated to determine **the distribution of data in each feature**.
@@ -122,15 +122,15 @@ After handling outliers, the dataset was **scaled** using **Min-Max Scaling**:
 5. ### <a name="_98sjjvslok84"></a>Data Visualizations:
 - Distribution of Temperature:
 
-The dataset is left-skewed but not much. This indicates that the dataset doesn’t exhibit very extreme variations in data.
+  -The dataset is left-skewed but not much. This indicates that the dataset doesn’t exhibit very extreme variations in data.
 
 - Distribution of Precipitation:
 
-The precipitation data was **highly skewed**, meaning most recorded values were **low or near zero**, while a few extreme values represented heavy rainfall events. This suggests that **rainfall is not evenly distributed**, with dry periods being far more common than high-rainfall periods.
+  -The precipitation data was **highly skewed**, meaning most recorded values were **low or near zero**, while a few extreme values represented heavy rainfall events. This suggests that **rainfall is not evenly distributed**, with dry periods being far more common than high-rainfall periods.
 
 - Temperature vs Precipitation:
 
-A scatter plot was used to visualize the relationship between **temperature and precipitation**. The plot **showed no strong correlation**, meaning that **higher temperatures do not necessarily lead to increased precipitation** or vice versa. This means that there are several other factors that affect precipitation in an area.
+  -A scatter plot was used to visualize the relationship between **temperature and precipitation**. The plot **showed no strong correlation**, meaning that **higher temperatures do not necessarily lead to increased precipitation** or vice versa. This means that there are several other factors that affect precipitation in an area.
 
 -----
 ## <a name="_2nx725dvg3g"></a>**Forecasting Model:**
