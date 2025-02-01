@@ -1,6 +1,6 @@
 # <a name="_1yok37gskr5m"></a> **Weather Forecasting Using Time Series Models**
 -----
-1. ## <a name="_abe2pssfxkek"></a>**Introduction:**
+## <a name="_abe2pssfxkek"></a>**Introduction:**
 1. ### <a name="_vlr1qqc7zgek"></a>Project Overview
 Climate change and weather variability have made **temperature forecasting** a crucial field of study. This project aims to **analyze global weather data** and develop a reliable forecasting model using **time-series techniques**. The study covers:
 
@@ -9,24 +9,24 @@ Climate change and weather variability have made **temperature forecasting** a c
 - **Forecasting Model Implementation** – Using **ARIMA (AutoRegressive Integrated Moving Average)**.
 - **Model Evaluation** – Assessing performance using **Mean Absolute Error (MAE) & Root Mean Squared Error (RMSE)**.
 - **Insights & Conclusions**– Interpreting findings.
-1. ### <a name="_u5a53x7w54ah"></a>Objective of the Study
+2. ### <a name="_u5a53x7w54ah"></a>Objective of the Study
 The primary objective is to **predict temperature trends** using time-series forecasting techniques and analyze the impact of various weather parameters.
-1. ### <a name="_ymhf13gxjduc"></a>Dataset Description
+3. ### <a name="_ymhf13gxjduc"></a>Dataset Description
 - **Total Records:** 50,085
 - **Total Features:** 41
 - **Time Period:** Continuous weather data
-1. ### <a name="_1rlivbcmd193"></a>Key Variables in Dataset
+4. ### <a name="_1rlivbcmd193"></a>Key Variables in Dataset
 - **Temperature (Celsius & Fahrenheit)** – Target variable for forecasting.
 - **Precipitation (mm & inches)** – Measures rainfall at different locations.
 - **Wind Speed (mph & kph)** – Affects temperature variations.
 - **Humidity & Air Quality** – Indicators of climate conditions.
 - **Timestamps** – Essential for time-series analysis.
 -----
-1. ## <a name="_xlpkd41vqavc"></a>**Data Cleaning and Preprocessing:**
+## <a name="_xlpkd41vqavc"></a>**Data Cleaning and Preprocessing:**
 1. ### <a name="_s2rcd3sndoq"></a>Handling Missing Values:
 - The dataset was **analyzed for missing values**, and **no missing data** was detected.
 - Therefore, **no imputation was necessary** for data integrity.
-1. ### <a name="_aybfdaup46q9"></a>Outlier Detection:
+2. ### <a name="_aybfdaup46q9"></a>Outlier Detection:
 To ensure **data reliability**, outliers were identified using the **Interquartile Range (IQR) method**.
 
 **Interquartile Range (IQR) Method**
@@ -45,7 +45,7 @@ To ensure **data reliability**, outliers were identified using the **Interquarti
 
 - Any value **outside this range** was flagged as an **outlier**.
 
-1. ### <a name="_ftjsxxwvq8ch"></a>Outlier Handling:
+3. ### <a name="_ftjsxxwvq8ch"></a>Outlier Handling:
    Two methods of Outlier Handling were tried out to determine which worked the best:
 
    C.1. Winsorization
