@@ -55,6 +55,7 @@ To ensure **data reliability**, outliers were identified using the **Interquarti
    C.1. Winsorization
 
 ✔  Winsorization is a technique that **limits extreme values by replacing them with the nearest boundary value** at a certain percentile (e.g., **1st and 99th percentiles**).
+
 ✔  This method **retains the total number of observations** while **reducing the impact of extreme values**.
 
 🔹 **How Winsorization Works:**
