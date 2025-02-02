@@ -109,12 +109,14 @@ A correlation heatmap was plotted to observe the dependency of one feature on an
   - **Wind Direction & All other factors**(~0)**:** No significant relationship.
   
 3. ### <a name="_agbha2wv2nxd"></a>Temperature Trends over time:
+A line plot to observe the variation of temperature overtime was plotted.
 - The plot reveals a **seasonal pattern**, where temperature values **rise and fall periodically**, indicating **recurring trends**. 
 - The temperature was high in **June-September** likely due to the summer **season** in most of the parts of Earth whereas the temperatures were low between **September and February** likely due to the winter **season**.
 - The data suggests the presence of **long-term trends**, which may indicate gradual climate shifts or yearly variations.
 - Short-term **fluctuations** were also observed, likely due to **daily weather changes, atmospheric conditions, or local environmental factors**.
 
 4. ### <a name="_wpognvn4uwjz"></a>Precipitation Trends over time:
+A line plot to observe the variation of precipitation overtime was plotted.
 - Unlike temperature, **precipitation does not follow a smooth trend** and instead appears **sporadic**, with frequent **zero or very low values** and occasional spikes indicating heavy rainfall events. This aligns with the **skewed precipitation distribution observed in the histogram**, where most values were close to zero.
 - The precipitation trend shows **sudden, sharp increases** on specific days, likely due to **localized storms, seasonal monsoons, or atmospheric disturbances**.
 - Precipitation **does not exhibit a clear long-term trend**. Since **precipitation does not follow a smooth trend**, traditional forecasting models like **ARIMA may struggle** with accuracy.
@@ -122,11 +124,11 @@ A correlation heatmap was plotted to observe the dependency of one feature on an
 
 5. ### <a name="_98sjjvslok84"></a>Data Visualizations:
 - Distribution of Temperature:
-
+  - A frequency plot of temperature was plotted to observe its distribution.
   - The dataset is left-skewed but not much. This indicates that the dataset doesn’t exhibit very extreme variations in data.
 
 - Distribution of Precipitation:
-
+  - A frequency plot of temperature was plotted to observe its distribution.
   - The precipitation data was **highly skewed**, meaning most recorded values were **low or near zero**, while a few extreme values represented heavy rainfall events. This suggests that **rainfall is not evenly distributed**, with dry periods being far more common than high-rainfall periods.
 
 - Temperature vs Precipitation:
